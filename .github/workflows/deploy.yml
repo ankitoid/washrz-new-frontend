@@ -31,4 +31,4 @@ jobs:
         run: npm run build
  
       - name: Deploy to S3
-        run: aws s3 sync dist/ s3://careers.globalxperts.net --delete
+        run: aws s3 sync dist/ s3://erp.drydash.in --delete
