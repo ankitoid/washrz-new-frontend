@@ -1,0 +1,51 @@
+/* Navbar container */
+.navbar {
+    background-color: teal;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Logo and title on the left */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    width: 40px; /* Adjust the logo width as needed */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .navbar-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Navigation links on the right */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-link {
+    margin-right: 20px;
+  }
+  
+  .navbar-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Change link color on hover */
+  .navbar-link a:hover {
+    color: lightgray;
+  }
+  
+

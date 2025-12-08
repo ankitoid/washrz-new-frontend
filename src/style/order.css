@@ -1,0 +1,104 @@
+/* Dropdown Styles */
+.custom-select {
+  width: 100%;
+  background-color: #6dd8df;
+  border-radius: 5px;
+  padding: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.custom-select:hover {
+   border-color: #40a9ff; /*#ececec */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-select .ant-select-selector {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.custom-select .ant-select-selection-item {
+  font-size: 16px;
+  /* color: #333; */
+  color: hwb(0deg 0% 100% / 62%);
+}
+
+.custom-select .ant-select-arrow {
+  color: whitesmoke;
+}
+
+.custom-select-dropdown {
+  border-radius: 5px;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.custom-select-dropdown .ant-select-item {
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #333;
+}
+
+.custom-select-dropdown .ant-select-item:hover {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+.custom-select-dropdown .ant-select-item-option-selected {
+  background-color: #1890ff;
+  color: white;
+}
+
+.custom-select.delivered {
+  background-color: #98b1ca80;
+  color: white;
+}
+
+
+/* CSS for background blur when modal is open */
+.modal-backdrop.show {
+  /* backdrop-filter: blur(80px);
+  background-color: rgb(0, 0, 0); */
+  --main-surface-primary: #000000 !important;
+}
+
+/* Make modal transparent */
+.modal-content {
+  background: rgb(5, 102, 100);
+  border: none;
+  box-shadow: none;
+}
+
+/* Style for the modal body, centered content */
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Style the photo (img) to center and give a nice look */
+.modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Style the audio player */
+.modal-body audio {
+  outline: none;
+}
+
+/* Button styling in modal footer */
+.modal-footer {
+  border-top: none;
+}
+
+.modal-footer .btn {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: #000;
+}

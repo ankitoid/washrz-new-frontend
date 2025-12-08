@@ -1,0 +1,254 @@
+.sidebar {
+  width: 85px;
+  min-height: 96.7vh;
+  background-color: teal;
+  border-right: 1px solid teal;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0px 1px 6px 0px #00000012;
+  padding: 0px 20px 0px 17px;
+}
+
+.sidebar:hover {
+  width: 210px;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: padding 0.3s ease;
+}
+
+.sidebar > div:first-child {
+  border-bottom: 1px solid #dee2e6;
+  border-radius: unset;
+  width: fit-content;
+}
+
+.sidebar > div:first-child:hover {
+  background-color: unset;
+}
+
+.sidebar > div:first-child > button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-brand {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sidebar-nav {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-title {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin: 1rem 0.75rem 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar:hover .nav-title {
+  opacity: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 0.75rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.nav-item:hover {
+  background-color: #e9ecef;
+  color: teal;
+}
+
+.nav-item:hover .nav-text {
+  opacity: 1;
+  color: teal;
+}
+
+.nav-group {
+  color: teal;
+}
+
+.nav-group-open {
+  color: teal !important;
+}
+
+.nav-group:hover .nav-text {
+  opacity: 1;
+  color: teal;
+}
+
+.nav-group .nav-toggler .nav-icon {
+  color: white;
+}
+
+.nav-group:hover .nav-toggler .nav-icon {
+  color: teal;
+}
+
+.nav-icon {
+  margin-right: 0.75rem;
+  text-align: left;
+}
+
+.nav-icon:hover {
+  color: teal;
+}
+
+.nav-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: white;
+}
+.nav-toggler-open .nav-text {
+  color: teal;
+}
+
+.nav-dropdown .nav-item .nav-text {
+  color: teal;
+}
+
+.sidebar:hover .nav-text {
+  opacity: 1;
+}
+
+.badge {
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-left: auto;
+}
+
+.badge > img {
+  width: 10px;
+  height: 10px;
+}
+
+.nav-group {
+  border-radius: 8px;
+  color: teal;
+}
+
+.nav-toggler {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  cursor: pointer;
+  border-radius: 8px;
+  color: teal !important;
+}
+
+.nav-toggler:hover {
+  background-color: #e9ecef;
+}
+
+.nav-toggler-open {
+  background-color: #ffffff;
+  border-radius: 8px 8px 0px 0px;
+  color: teal !important;
+}
+.nav-group .nav-toggler-open .nav-icon {
+  color: teal;
+}
+
+.nav-group:hover .nav-toggler-open .nav-icon {
+  color: teal;
+}
+
+/* Dropdown Styles */
+.nav-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.nav-dropdown.open {
+  max-height: 200px;
+  transition: max-height 0.3s ease;
+  background-color: #fff9e5;
+  border-radius: 0px 0px 8px 8px;
+  color: teal !important;
+}
+
+.nav-dropdown .nav-item {
+  padding-left: 2rem;
+}
+
+.nav-icon-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: teal;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Mobile View*/
+@media only screen and (min-width: 300px) and (max-width: 500px) and (min-height: 500px) and (max-height: 1200px) {
+  .sidebar {
+    display: none;
+    position: absolute;
+  }
+
+  .sidebar.open {
+    display: block;
+    overflow: auto;
+    width: 60vw;
+    border-radius: 0px 30px 30px 0px;
+    color: white;
+    z-index: 2;
+  }
+
+  .nav-item {
+    /* margin-top: 20px; */
+    color: white;
+  }
+
+  .nav-group {
+    width: 100%;
+    color: white;
+  }
+
+  .nav-text {
+    opacity: 1;
+  }
+
+  .nav-dropdown {
+    width: 100%;
+  }
+
+  .sidebar > div:first-child {
+    display: none;
+  }
+
+  /* /Sidebar arrow when toggle/ */
+  /* .sidebar::before {
+    content: "";
+    top: 0px;
+    left: 25px;
+    right: 45px;
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+  } */
+}

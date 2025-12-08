@@ -1,0 +1,75 @@
+/* Main container */
+.calendar-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+/* Filter Button (Top-Right Corner) */
+.filter-button {
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  z-index: 30;
+}
+
+.filter-button svg {
+  font-size: 30px;
+  cursor: pointer;
+  color: teal;
+  transition: transform 0.2s ease-in-out;
+}
+
+.filter-button svg:hover {
+  transform: scale(1.1);
+}
+
+/* Modal Background */
+.calendar-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 40;
+}
+
+/* Calendar Popup */
+.calendar-popup {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+/* Close Button */
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-button svg {
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+  transition: color 0.2s ease-in-out;
+}
+
+.close-button svg:hover {
+  color: darkred;
+}
+
+/* Selected Date */
+.selected-date {
+  margin-top: 0px;
+  font-size: 16px;
+  text-align: right;
+  margin-right: 15px;
+}

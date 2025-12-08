@@ -1,0 +1,36 @@
+/* Ensure the card is relatively positioned */
+.card {
+  position: relative;
+}
+
+/* Delete Icon Container */
+.delete-icon-container {
+  position: absolute; /* Set the container to absolute positioning */
+  top: 10px; /* Position it at the top */
+  right: 10px; /* Position it on the right */
+  visibility: hidden; /* Hide by default */
+  opacity: 0; /* Set initial opacity */
+  transition: visibility 0s, opacity 0.2s linear; /* Smooth transition */
+}
+
+/* Show delete icon on card hover */
+.card:hover .delete-icon-container {
+  visibility: visible; /* Show icon on hover */
+  opacity: 1; /* Set opacity to fully visible */
+}
+
+.card:hover {
+  border-color: rgba(13, 110, 253, 0.7);
+  box-shadow: 0 0 10px 2px rgba(13, 110, 253, 0.6);
+}
+
+.card .delete-icon {
+  visibility: hidden; /* Hide the icon initially */
+  opacity: 0; /* Set initial opacity */
+  transition: visibility 0s, opacity 0.2s linear; /* Smooth transition */
+}
+
+.card:hover .delete-icon {
+  visibility: visible; /* Show icon on hover */
+  opacity: 1; /* Set opacity to fully visible */
+}

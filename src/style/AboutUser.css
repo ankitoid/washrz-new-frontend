@@ -1,0 +1,66 @@
+/* App.css */
+/* .App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+   */
+  .Container
+  { 
+    height: 80vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+  }
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    /* margin: 0 auto; */
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 80vh;
+  }
+  
+  .profile-photo img {
+    max-width: 180px;
+    max-height: 180px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .profile-details h2 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  .profile-documents h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .profile-documents div {
+    margin: 10px 0;
+  }
+  
+  .profile-documents strong {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .profile-documents img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  /* You can adjust these styles as needed to match your design and layout preferences. */
+  
