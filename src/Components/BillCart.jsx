@@ -937,8 +937,8 @@ function BillCart() {
         {
           // template_name: "automated_collection_successfull",
           // broadcast_name: "automated_collection_successfull",
-          template_name: "collection_success_under_2k",
-          broadcast_name: "collection_success_under_2k_1732369918455",
+          template_name: "sudhanshu_collection_under_2k",
+          broadcast_name: "sudhanshu_collection_under_2k_1732369918455",
           parameters: [
             {
               name: "name",
