@@ -82,7 +82,7 @@ function Header({ toggleSidebar }) {
                 <Profile />
               </>
             ) : (
-              <Link to="/login">Login</Link>
+              <div></div>
             )}
           </li>
         </ul>
