@@ -56,6 +56,8 @@ const { washrzserver } = constant;
 
 const socket = io(washrzserver);
 
+console.log("i am here:: ", socket)
+
 const ALLOWED_ROLES = {
   ADMIN: "admin",
   RIDER: "rider",
@@ -345,8 +347,9 @@ const LiveDelivery = () => {
     getPickups(selectedDate, pageNumber); // Fetch data on initial load
   }, [selectedDate, pageNumber]); // Update when page number changes
 
-  notification
+  // notification
   useEffect(() => {
+    console.log("hitted", Notification.permission)
     if (
       Notification.permission === "default" ||
       Notification.permission === "denied"
