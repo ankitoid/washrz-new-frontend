@@ -60,7 +60,7 @@ const Layout = () => {
 
       // Run only if current route is pickup page
       if (location.pathname === "/live") {
-        getPickups();
+        // getPickups();
       }
     });
 
