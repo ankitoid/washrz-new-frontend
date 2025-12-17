@@ -37,9 +37,11 @@
     "react-dom": "^18.2.0",
     "react-dropdown-select": "^4.10.0",
     "react-hook-form": "^7.47.0",
+    "react-hot-toast": "^2.6.0",
     "react-html5-camera-photo": "^1.5.11",
     "react-icons": "^4.12.0",
     "react-leaflet": "^4.2.1",
+    "react-loading-indicators": "^1.0.1",
     "react-modal": "^3.16.1",
     "react-multi-carousel": "^2.8.4",
     "react-multilevel-dropdown": "^4.0.0",
@@ -62,10 +64,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview"
-},
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
