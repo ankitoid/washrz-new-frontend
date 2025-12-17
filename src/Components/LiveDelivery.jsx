@@ -54,7 +54,7 @@ import { io } from "socket.io-client";
 import constant from "../constant";
 const { washrzserver } = constant;
 
-const socket = io(washrzserver);
+// const socket = io(washrzserver);
 
 console.log("i am here:: ", socket)
 
@@ -347,31 +347,31 @@ const LiveDelivery = () => {
     getPickups(selectedDate, pageNumber); // Fetch data on initial load
   }, [selectedDate, pageNumber]); // Update when page number changes
 
-  // notification
-  useEffect(() => {
-    console.log("hitted", Notification.permission)
-    if (
-      Notification.permission === "default" ||
-      Notification.permission === "denied"
-    ) {
-      Notification.requestPermission();
-    }
+  // // notification
+  // useEffect(() => {
+  //   console.log("hitted", Notification.permission)
+  //   if (
+  //     Notification.permission === "default" ||
+  //     Notification.permission === "denied"
+  //   ) {
+  //     Notification.requestPermission();
+  //   }
 
-    socket.on("addPickup", (data) => {
-      console.log("Pickup Notification:", data?.Name);
-      if (Notification.permission === "granted") {
-        new Notification("New Pickup!", {
-          body: `${data?.Name || "Customer"} has requested a pickup.`,
-          icon: `${logo}`,
-        });
-      }
-      getPickups(selectedDate, pageNumber); // Fetch data on initial load
-    });
-    getPickups(selectedDate, pageNumber);
-    return () => {
-      socket.off("addPickup");
-    };
-  }, [selectedDate, pageNumber]);
+  //   socket.on("addPickup", (data) => {
+  //     console.log("Pickup Notification:", data?.Name);
+  //     if (Notification.permission === "granted") {
+  //       new Notification("New Pickup!", {
+  //         body: `${data?.Name || "Customer"} has requested a pickup.`,
+  //         icon: `${logo}`,
+  //       });
+  //     }
+  //     getPickups(selectedDate, pageNumber); // Fetch data on initial load
+  //   });
+  //   getPickups(selectedDate, pageNumber);
+  //   return () => {
+  //     socket.off("addPickup");
+  //   };
+  // }, [selectedDate, pageNumber]);
 
   const handleDateChange = (date) => {
     setSelectedDate(date); // Store the selected date
